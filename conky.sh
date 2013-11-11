@@ -1,0 +1,1 @@
+/home/adam/.i3/conky.sh
