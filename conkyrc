@@ -14,13 +14,7 @@ TEXT
 { "full_text" : "${cpubar cpu0}"},
 { "full_text" : "Ram" , "color" : "\#a2f221" } ,
 { "full_text" : "${mem}" },
-{ "full_text" : "Wifi" , "color" : "\#a2f221" } ,
-{ "full_text" : "${wireless_essid wlp3s0}(${wireless_link_qual wlp3s0}/${wireless_link_qual_max wlp3s0})" } ,
-{ "full_text" : "Vol" , "color" : "\#a2f221" },
-{ "full_text" : "${exec amixer get Master -M | grep -oE "[[:digit:]]*%"}"},
 { "full_text" : "Batt" , "color" : "\#a2f221" } ,
-{ "full_text" : "${battery_short}%"},
+{ "full_text" : "${battery_short}"},
 { "full_text" : "" , "color" : "\#a2f221" } ,
 { "full_text" : "${time %l:%M%P}" }] ,
-
-
