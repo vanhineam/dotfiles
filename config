@@ -34,10 +34,6 @@ exec --no-startup-id xcompmgr
 # floating windows by default
 for_window [title="Hangouts"] floating enable
 
-# audio bindings
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB-
-
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -56,7 +52,7 @@ bindsym $mod+r exec dmenu_run
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+apostrophe focus right
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -65,10 +61,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
+bindsym $mod+Shift+h move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+apostrophe move right
+bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -83,7 +79,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen
+bindsym $mod+u fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+q layout stacking

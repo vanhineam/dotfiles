@@ -14,7 +14,8 @@ TEXT
 { "full_text" : "${cpubar cpu0}"},
 { "full_text" : "Ram" , "color" : "\#a2f221" } ,
 { "full_text" : "${mem}" },
-{ "full_text" : "Batt" , "color" : "\#a2f221" } ,
-{ "full_text" : "${battery_short}"},
-{ "full_text" : "" , "color" : "\#a2f221" } ,
+{ "full_text" : "Wifi" , "color" : "\#a2f221" } ,
+{ "full_text" : "${wireless_essid wlp12s0}(${wireless_link_qual wlp12s0}/${wireless_link_qual_max wlp12s0})" } ,
 { "full_text" : "${time %l:%M%P}" }] ,
+
+
